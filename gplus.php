@@ -150,6 +150,7 @@ function update_profile_status() {
     curl_setopt($ch, CURLOPT_COOKIEJAR, $GLOBALS['cookies']);
     curl_setopt($ch, CURLOPT_COOKIEFILE, $GLOBALS['cookies']);
     curl_setopt($ch, CURLOPT_USERAGENT, $GLOBALS['uagent']);
+    //delete group=b0& in the line below, to post just to your circles, not to public
     curl_setopt($ch, CURLOPT_URL, $baseurl . '?v=compose&group=m1c&group=b0&hideloc=1&a=post');
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
     curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
@@ -197,7 +198,7 @@ function logout() {
     curl_setopt($ch, CURLOPT_COOKIEFILE, $GLOBALS['cookies']);
     curl_setopt($ch, CURLOPT_USERAGENT, $GLOBALS['uagent']);
     curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
-    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 0);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
     curl_setopt($ch, CURLOPT_URL, 'https://www.google.com/m/logout');
     $buf = curl_exec($ch);
     curl_close($ch);
