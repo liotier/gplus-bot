@@ -1,6 +1,6 @@
 # Google Plus status update bot
 
-* Readme date: Nov 16 2011
+* Readme date: Dec 15 2011
 * Contributors: lukapusic
 * Author: Luka Pusic <luka@pusic.si>
 * URI: http://360percents.com/posts/first-google-google-plus-status-update-bot-in-php/
@@ -25,11 +25,18 @@ OAuth, tokens or any other annoying products.
 * page updating still not implemented
 
 #### Nov 16 2011
-* changed the way baseurl is determined, google remove base href
+* changed the way baseurl is determined, google removed base href
+
+#### Dec 15 2012
+* post visibility is not public by default
 
 ## Known issues
 * fails if you didn't confirm mobile location terms and conditions
 * fails if you have mobile verification enabled
+
+## TODO
+* add an option to change post visility
+* add posting to pages
 
 ## License
  ----------------------------------------------------------------------------

@@ -3,16 +3,16 @@
 /**
  * Google+ (plus.google.com) PHP Curl bot
  * @since Sep 29 2011
- * @version 3.0
+ * @version 15.12.2011
  * @link http://360percents.com/
- * @author Luka Pušić <pusic93@gmail.com>
+ * @author Luka Pušić <luka@pusic.si>
  */
 /**
  * REQUIRED PARAMETERS
  */
-$status = 'test http://360percents.com/';
-$email = 'email@email.com';
-$pass = 'passw0rd';
+$status = 'testzzz';
+$email = 'your@email.com';
+$pass = 'yourpassw0rd';
 
 /**
  * OPTIONAL PARAMETERS
@@ -150,10 +150,10 @@ function update_profile_status() {
     curl_setopt($ch, CURLOPT_COOKIEJAR, $GLOBALS['cookies']);
     curl_setopt($ch, CURLOPT_COOKIEFILE, $GLOBALS['cookies']);
     curl_setopt($ch, CURLOPT_USERAGENT, $GLOBALS['uagent']);
-    curl_setopt($ch, CURLOPT_URL, $baseurl . '?v=compose&group=m1c&hideloc=1&a=post');
+    curl_setopt($ch, CURLOPT_URL, $baseurl . '?v=compose&group=m1c&group=b0&hideloc=1&a=post');
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
     curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
-    curl_setopt($ch, CURLOPT_REFERER, $baseurl . '?v=compose&group=m1c&hideloc=1');
+    curl_setopt($ch, CURLOPT_REFERER, $baseurl . '?v=compose&group=m1c&group=b0&hideloc=1');
     curl_setopt($ch, CURLOPT_POST, 1);
     curl_setopt($ch, CURLOPT_POSTFIELDS, $params);
     $buf = curl_exec($ch);
@@ -197,6 +197,7 @@ function logout() {
     curl_setopt($ch, CURLOPT_COOKIEFILE, $GLOBALS['cookies']);
     curl_setopt($ch, CURLOPT_USERAGENT, $GLOBALS['uagent']);
     curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 0);
     curl_setopt($ch, CURLOPT_URL, 'https://www.google.com/m/logout');
     $buf = curl_exec($ch);
     curl_close($ch);
