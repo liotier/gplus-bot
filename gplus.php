@@ -66,6 +66,8 @@ function login_data() {
     curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
 
     $buf = utf8_decode(html_entity_decode(curl_exec($ch)));
+    $buf = str_replace( '&amp;', '&', $buf ); // just in case any correctly encoded
+    $buf = str_replace( '&', '&amp;', $buf ); // now encode them all again
     curl_close($ch);
 
     echo "\n[+] Sending GET request to: https://plus.google.com/\n\n";
