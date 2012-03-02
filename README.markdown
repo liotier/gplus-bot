@@ -27,8 +27,11 @@ OAuth, tokens or any other annoying products.
 #### Nov 16 2011
 * changed the way baseurl is determined, google removed base href
 
-#### Dec 15 2012
+#### Dec 15 2011
 * post visibility is not public by default
+
+#### Mar 2 2012
+* fixed "&" encoding (thx Pauly)
 
 ## Known issues
 * fails if you didn't confirm mobile location terms and conditions
