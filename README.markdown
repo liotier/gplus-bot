@@ -1,6 +1,6 @@
 # Google Plus status update bot
 
-* Readme date: Dec 15 2011
+* Readme date: Mar 2 2012
 * Contributors: lukapusic
 * Author: Luka Pusic <luka@pusic.si>
 * URI: http://360percents.com/posts/first-google-google-plus-status-update-bot-in-php/
