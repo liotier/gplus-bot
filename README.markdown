@@ -17,10 +17,6 @@ OAuth, tokens or any other annoying products.
 
 ## Changelog
 
-#### Mar 9 2012
-* status is now passed as command line argument instead of directly in a variable declaration inside the script
-* PHP hashbang for easier command line usage
-
 #### Nov 11 2011
 * added debug parameter, pageid parameter, pc_uagent parameter
 * page updating still not implemented
@@ -33,6 +29,10 @@ OAuth, tokens or any other annoying products.
 
 #### Mar 2 2012
 * fixed "&" encoding (thx Pauly)
+
+#### Mar 9 2012 (contribution by liotier)
+* status is now passed as command line argument instead of directly in a variable declaration inside the script
+* PHP hashbang for easier command line usage
 
 ## Known issues
 * fails if you didn't confirm mobile location terms and conditions
