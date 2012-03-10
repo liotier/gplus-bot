@@ -1,15 +1,12 @@
 # Google Plus status update bot
 
-* Readme date: Mar 2 2012
-* Contributors: lukapusic
-* Author: Luka Pusic <luka@pusic.si>
+* Author: Luka Pusic <luka@pusic.si> (lukapusic on github)
 * URI: http://360percents.com/posts/first-google-google-plus-status-update-bot-in-php/
 
 ## Description
 This bot can log into your Google account and update your Google Plus status,
 but you can extend it to other Google products. All this is done without Google API,
 OAuth, tokens or any other annoying products.
-
 
 ## System requirements
 * PHP curl extension
@@ -19,6 +16,10 @@ OAuth, tokens or any other annoying products.
 2. run it ```php gplus.php```
 
 ## Changelog
+
+#### Mar 9 2012
+* status is now passed as command line argument instead of directly in a variable declaration inside the script
+* PHP hashbang for easier command line usage
 
 #### Nov 11 2011
 * added debug parameter, pageid parameter, pc_uagent parameter
